@@ -30,9 +30,8 @@ O desafio do Pokémon é um teste de Desenvolvimento Web passado pela RedFox. O 
 | POST | /pokemon/create | Cria pokemons | name, pokedex_number, generation, evolution, family_id, stat_total, atk,def, sta, legendary | 
 | PUT | /pokemon/:id | consulta e atualiza as informações de um pokemon na aplicação| | 
 | DELETE | /pokemon/:id | Deleta um pokemon da aplicação | |
-<br>
-## 👷🏾‍♂️ Como usar?
 
+## 👷🏾‍♂️ Como usar?
 <h4> Você precisa das seguintes ferramentas instaladas para executar este projeto: </h4>
  <p> <a href="https://nodejs.org/en/">Node.js<a>, <a href="https://yarnpkg.com/">Yarn</a> e vai precisar criar uma conta no <a href="https://www.mongodb.com/"> MongoDB. </a> </p>
 
