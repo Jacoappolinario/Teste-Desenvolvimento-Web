@@ -8,40 +8,29 @@
 </h3>
 
 ## 🚀 Sobre
-O desafio do Pokémon é um teste de Desenvolvimento Web passado pela RedFox. O objetivo do desafio é criar um é criar um sistema que substitua o uso de excel, de forma que eu consiga expandir os meus dados e acrescentar funcionalidades. 
-
-## ✅ Rotas: 
-### Rotas responsaveis por cadastro e sessão de usuário:
-- routes.post('/users', UserController.create);
-- routes.post('/session', SessionController.create);
-
-
-### Middleware responsavel por verificar se o usuario está autenticado: 
-- routes.use(auth);
-
-
-### Rota responsavel pela listagem de usuários autenticados
-- routes.get('/users', UserController.index);
-
-
-
-### Rota responsavel pela listagem de usuários autenticados
-- routes.get('/pokemon/', PokemonController.index)
-
-
-
-### Rota responsavel pela criação de pokemons
-- routes.post('/pokemon/create', PokemonController.create)
-### Rota responsavel pela atualização de informações dos pokemons
-- routes.put('/pokemon/:id', PokemonController.update)
-### Rota responsavel pela exclusão de pokemons do sistema
-- routes.delete('/pokemon/:id', PokemonController.delete)
+O desafio do Pokémon é um teste de Desenvolvimento Web passado pela RedFox. O objetivo do desafio é criar um sistema que substitua o uso de excel, de forma que eu consiga expandir os meus dados e acrescentar funcionalidades. 
 
 ## 💻 Tecnologias
 - [Express](http://expressjs.com/en/5x/api.html#app.use)
 - [Jsonwebtoken](https://github.com/auth0/node-jsonwebtoken#readme)
 - [Mongoose](https://mongoosejs.com/docs/guide.html)
 
+## ✅ Rotas: 
+### Rotas públicas
+| Método | Rota | Função | Campos 
+|--|--|--|--|
+| POST | /user | Cadastra um usuário | name, email, password | 
+| POST | /session | login de usuário na aplicação | email e password | 
+<br>
+### Rotas Privada
+| Método | Rota | Função | Campos 
+|--|--|--|--|
+| GET | /user | Lista usuários da aplicação | | 
+| GET | /pokemon | Lista todos os pokemons | | 
+| POST | /pokemon/create | Cria pokemons | name, pokedex_number, generation, evolution, family_id, stat_total, atk,def, sta, legendary | 
+| PUT | /pokemon/:id | consulta e atualiza as informações de um pokemon na aplicação| | 
+| DELETE | /pokemon/:id | Deleta um pokemon da aplicação | |
+<br>
 ## 👷🏾‍♂️ Como usar?
 
 <h4> Você precisa das seguintes ferramentas instaladas para executar este projeto: </h4>
@@ -63,6 +52,8 @@ Crie um arquivo .env na pasta do projeto, adicione as crendeciais de conexão do
 # Divirta-se
 $ yarn start
 ```
+#### Atenção: 
+Para ter acesso as rotas privadas, você vai precisar pegar o token recebido durante o cadastramento de usuário e clicando em "Auth" caso esteja utilizando o Insomnia, você vai adicionar o token em "Bearer Yoken". Repetindo esse passo em cada rota privada que for utilizar.
 
 ## 📕 Licença
 Lançado em 2021. Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
