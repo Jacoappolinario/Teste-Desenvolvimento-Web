@@ -38,7 +38,7 @@ $ yarn start
 ```
 
 ## 📕 Licença
-Lançado em 2021 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+Lançado em 2021. Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
 ---
 
