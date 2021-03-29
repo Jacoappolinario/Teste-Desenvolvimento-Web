@@ -20,21 +20,21 @@ O desafio do Pokémon é um teste de Desenvolvimento Web passado pela RedFox. O 
 - routes.use(auth);
 
 
-### Rotas responsavel pela listagem de usuários autenticados
+### Rota responsavel pela listagem de usuários autenticados
 - routes.get('/users', UserController.index);
 
 
 
-### Rotas responsavel pela listagem de usuários autenticados
+### Rota responsavel pela listagem de usuários autenticados
 - routes.get('/pokemon/', PokemonController.index)
 
 
 
-### Rotas responsavel pela criação de pokemons
+### Rota responsavel pela criação de pokemons
 - routes.post('/pokemon/create', PokemonController.create)
-### Rotas responsavel pela atualização de informações dos pokemons
+### Rota responsavel pela atualização de informações dos pokemons
 - routes.put('/pokemon/:id', PokemonController.update)
-### Rotas responsavel pela exclusão de pokemons do sistema
+### Rota responsavel pela exclusão de pokemons do sistema
 - routes.delete('/pokemon/:id', PokemonController.delete)
 
 ## 💻 Tecnologias
