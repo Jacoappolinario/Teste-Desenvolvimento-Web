@@ -8,7 +8,34 @@
 </h3>
 
 ## 🚀 Sobre
-O desafio do Pokémon é um teste de Desenvolvimento Web passado pela RedFox. O objetivo do desafio é criar um é criar um sistema que substitua o uso de excel, de forma que eu consiga expandir os meus dados e acrescentar funcionalidades.
+O desafio do Pokémon é um teste de Desenvolvimento Web passado pela RedFox. O objetivo do desafio é criar um é criar um sistema que substitua o uso de excel, de forma que eu consiga expandir os meus dados e acrescentar funcionalidades. 
+
+## ✅ Rotas: 
+### Rotas responsaveis por cadastro e sessão de usuário:
+- routes.post('/users', UserController.create);
+- routes.post('/session', SessionController.create);
+
+
+### Middleware responsavel por verificar se o usuario está autenticado: 
+- routes.use(auth);
+
+
+### Rotas responsavel pela listagem de usuários autenticados
+- routes.get('/users', UserController.index);
+
+
+
+### Rotas responsavel pela listagem de usuários autenticados
+- routes.get('/pokemon/', PokemonController.index)
+
+
+
+### Rotas responsavel pela criação de pokemons
+- routes.post('/pokemon/create', PokemonController.create)
+### Rotas responsavel pela atualização de informações dos pokemons
+- routes.put('/pokemon/:id', PokemonController.update)
+### Rotas responsavel pela exclusão de pokemons do sistema
+- routes.delete('/pokemon/:id', PokemonController.delete)
 
 ## 💻 Tecnologias
 - [Express](http://expressjs.com/en/5x/api.html#app.use)
