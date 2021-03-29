@@ -21,7 +21,7 @@ O desafio do Pokémon é um teste de Desenvolvimento Web passado pela RedFox. O 
 |--|--|--|--|
 | POST | /user | Cadastra um usuário | name, email, password | 
 | POST | /session | login de usuário na aplicação | email e password | 
-<br>
+
 ### Rotas Privada
 | Método | Rota | Função | Campos 
 |--|--|--|--|
